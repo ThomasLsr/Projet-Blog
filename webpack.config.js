@@ -1,10 +1,14 @@
 const path = require("path"); // j'importe une librairie path
 const HtmlWebpackPlugin = require("html-webpack-plugin"); // j'importe le html-webpack-plugin
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     // Point d'entree
     entry: {
-        main: path.join(__dirname, "src/index.js")
+        main: path.join(__dirname, "src/index.js"),
+        form: path.join(__dirname, "src/form/form.js"),
+        topbar: path.join(__dirname, "src/assets/javascripts/topbar.js")
     },
     // Point de sortie
     output: {
@@ -34,8 +38,25 @@ module.exports = {
     // plugins => fonctionnalites en plus que l'on va ajouter
     plugins: [
         // il va nous permettre de recuperer le index.html et d'injecter directement le bundle, sans que l'on est a faire manuellement
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, "src/index.html")
+            filename: 'index.html',
+            template: path.resolve(__dirname, "src/index.html"),
+            chunks: ["main", "topbar"]
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'form.html',
+            template: path.resolve(__dirname, "src/form/form.html"),
+            chunks: ["form", "topbar"]
+
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: "src/assets",
+                    to: "assets"
+                }
+            ]
         })
     ],
     stats: "minimal",
