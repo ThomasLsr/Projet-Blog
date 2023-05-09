@@ -52,4 +52,5 @@ const formIsValid = (article) => {
         errorList.innerHTML = '';
         return true;
     }
+    
 }
