@@ -3,9 +3,42 @@ import './form.scss';
 
 const form = document.querySelector("form");
 const errorList = document.querySelector("#errors");
-let errors = [];
+const btnCancel = document.querySelector('.btn-secondary');
 
 
+const fillForm = (article) => {
+    const author = document.querySelector('input[name="author"]');
+    const image = document.querySelector('input[name="image"]');
+    const category = document.querySelector('select[name="category"]');
+    const title = document.querySelector('input[name="title"]');
+    const content = document.querySelector("textarea");
+
+    author.value = article.author || '';
+    image.value = article.image || '';
+    category.value = article.category || '';
+    title.value = article.title || '';
+    content.value = article.content || '';
+
+}
+const initForm = async () => {
+    const params = new URL(location.href);
+    const articleId = params.searchParams.get('id');
+
+    if (articleId) {
+        const response = await fetch(`https://restapi.fr/api/dwwm_tl/${articleId}`);
+        if(response.status < 300) {
+            const article = await response.json();
+            fillForm(article);
+        }
+
+    }
+    
+}
+initForm();
+
+btnCancel.addEventListener('click', ()=> {
+    location.assign('/index.html');
+})
 form.addEventListener('submit', async event => {
     event.preventDefault();
 
@@ -23,19 +56,20 @@ form.addEventListener('submit', async event => {
                     'Content-Type' : 'application/json'
                 }
             });
-            
-            const body = await response.json();
-            form.reset();
-            console.log(body);
+        if(response.status < 299) {
+            location.assign('./index.html');
+        }
         } catch (error) {
             console.error(error);
         }
 
         }
-});
+})
 
 const formIsValid = (article) => {
-    if (!article.author || !article.category || !article.content) {
+    let errors = [];
+
+    if (!article.author || !article.category || !article.content || !article.image || !article.title) {
         errors.push("Vous devez renseigner tous les champs!");
     } else {
         errors = [];
@@ -52,5 +86,5 @@ const formIsValid = (article) => {
         errorList.innerHTML = '';
         return true;
     }
-    
+
 }
