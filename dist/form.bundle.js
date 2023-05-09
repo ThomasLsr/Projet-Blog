@@ -29,6 +29,33 @@ ___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  bo
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/form/form.scss":
+/*!*********************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/form/form.scss ***!
+  \*********************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap);"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".content {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}\n.content form {\n  width: 700px;\n  padding: 4rem;\n  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n  border-radius: 5px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-start;\n}\n.content form h2 {\n  width: 100%;\n}\n@media (max-width: 480px) {\n  .content form {\n    width: 100%;\n  }\n}\n@media (max-width: 768px) {\n  .content form {\n    width: 100%;\n  }\n}\n.content form h2 {\n  width: 100%;\n}\n.content form .form-group {\n  width: 100%;\n  margin-bottom: 2rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-start;\n}\n.content form .form-group label {\n  font-size: 1.8rem;\n  color: #2c3e50;\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n.content form .form-group input, .content form .form-group textarea, .content form .form-group select {\n  width: 100%;\n  border: 1px solid #ecf0f1;\n  outline: none;\n  font-size: 1.8rem;\n  border-radius: 3px;\n}\n.content form .form-group input:focus, .content form .form-group textarea:focus, .content form .form-group select:focus {\n  border-color: #2ecc71;\n}\n.content form .form-group input {\n  padding: 5px 10px;\n}\n.content form .form-group textarea {\n  min-height: 20rem;\n  padding: 10px;\n}\n.content form .form-group select {\n  padding: 10px 15px;\n}\n.content form .form-btn-container {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  align-items: center;\n}\n.content form .form-btn-container .btn {\n  margin-left: 1rem;\n}", "",{"version":3,"sources":["webpack://./src/form/form.scss","webpack://./src/assets/styles/_mixins.scss","webpack://./src/assets/styles/_variable.scss"],"names":[],"mappings":"AAGA;ECmBI,aAAA;EACA,mBAFoB;EAGpB,uBAHmC;EAInC,mBAJmD;ADfvD;AAAI;EACI,YAAA;EACA,aAAA;EACA,mFECK;EFAL,kBAAA;ECYJ,aAAA;EACA,sBDXkB;ECYlB,uBAHmC;EAInC,uBDbkC;AAItC;AAFQ;EACI,WAAA;AAIZ;AClBI;EDKA;IAaI,WAAA;EAIN;AACF;AClBI;EDAA;IAiBI,WAAA;EAKN;AACF;AAHI;EACI,WAAA;AAKR;AAFQ;EACI,WAAA;EACA,mBAAA;ECVR,aAAA;EACA,sBDWsB;ECVtB,uBAHmC;EAInC,uBDSsC;AAM1C;AAJY;EACI,iBAAA;EACA,cElCD;EFmCC,gBAAA;EACA,mBAAA;AAMhB;AAHY;EACI,WAAA;EACA,yBAAA;EACA,aAAA;EACA,iBAAA;EACA,kBAAA;AAKhB;AAHgB;EACI,qBEjDJ;AFsDhB;AADQ;EACI,iBAAA;AAGZ;AAAQ;EACI,iBAAA;EACA,aAAA;AAEZ;AACQ;EACI,kBAAA;AACZ;AAGI;EACI,WAAA;EChDJ,aAAA;EACA,mBAFoB;EAGpB,yBD+C4B;EC9C5B,mBAJmD;ADoDvD;AAAQ;EACI,iBAAA;AAEZ","sourcesContent":["@import '../assets/styles/variable';\r\n@import '../assets/styles/mixins';\r\n\r\n.content {\r\n    @include flex;\r\n\r\n    form {\r\n        width: 700px;\r\n        padding: 4rem;\r\n        box-shadow: $box-shadow;\r\n        border-radius: 5px;\r\n\r\n        @include flex(column, $align: flex-start);\r\n        \r\n        h2 {\r\n            width: 100%;\r\n        }\r\n\r\n    @include xs {\r\n        width: 100%;\r\n    }\r\n\r\n    @include sm {\r\n        width: 100%;\r\n    }\r\n\r\n    h2 {\r\n        width: 100%;\r\n    }\r\n\r\n        .form-group {\r\n            width: 100%;\r\n            margin-bottom: 2rem;\r\n\r\n            @include flex(column, $align: flex-start);\r\n\r\n            label {\r\n                font-size: 1.8rem;\r\n                color: $accent-color;\r\n                font-weight: 700;\r\n                margin-bottom: 1rem;\r\n            }\r\n\r\n            input,textarea,select {\r\n                width: 100%;\r\n                border: 1px solid $divider-color;\r\n                outline: none;\r\n                font-size: 1.8rem;\r\n                border-radius: 3px;\r\n\r\n                &:focus {\r\n                    border-color: $primary-color;\r\n                }\r\n            }\r\n\r\n        input {\r\n            padding: 5px 10px;\r\n        }\r\n\r\n        textarea {\r\n            min-height: 20rem;\r\n            padding: 10px;\r\n        }\r\n\r\n        select {\r\n            padding: 10px 15px;\r\n        }\r\n    }\r\n\r\n    .form-btn-container {\r\n        width: 100%;\r\n        @include flex($justify: flex-end);\r\n\r\n        .btn {\r\n            margin-left: 1rem;\r\n        }\r\n    }\r\n}\r\n}\r\n","@mixin xs {\r\n    @media (max-width: $screen-xs) {\r\n        @content;\r\n    }\r\n   }\r\n@mixin sm {\r\n    @media (max-width: $screen-sm) {\r\n        @content;\r\n    }\r\n   }\r\n@mixin md {\r\n    @media (min-width: $screen-sm) and (max-width: $screen-md) {\r\n        @content;\r\n    }\r\n   }\r\n@mixin xl {\r\n    @media (min-width: $screen-xl) {\r\n        @content;\r\n    }\r\n   }\r\n   \r\n@mixin flex($direction: row, $justify: center, $align: center) {\r\n    display: flex;\r\n    flex-direction: $direction;\r\n    justify-content: $justify;\r\n    align-items: $align;\r\n   }","@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');\r\n\r\n$primary-color: #2ecc71;\r\n$primary-color-dark: #27ae60;\r\n$accent-color: #2c3e50;\r\n$text-color: #333;\r\n$text-error: #e74c3c;\r\n$divider-color: #ecf0f1;\r\n$dark-grey: #324355;\r\n$font-family: 'Mulish', sans-serif;\r\n$box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67,.15);\r\n\r\n$screen-xs: 480px;\r\n$screen-sm: 768px;\r\n$screen-md: 979px;\r\n$screen-xl: 1200px;"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/runtime/api.js":
 /*!*****************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/api.js ***!
@@ -198,6 +225,60 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_style_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_style_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_style_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/form/form.scss":
+/*!****************************!*\
+  !*** ./src/form/form.scss ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./form.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/form/form.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_form_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -545,14 +626,60 @@ module.exports = styleTagTransform;
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!******************************************!*\
-  !*** ./src/assets/javascripts/topbar.js ***!
-  \******************************************/
+/*!**************************!*\
+  !*** ./src/form/form.js ***!
+  \**************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/style.scss */ "./src/assets/styles/style.scss");
+/* harmony import */ var _assets_styles_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../assets/styles/style.scss */ "./src/assets/styles/style.scss");
+/* harmony import */ var _form_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./form.scss */ "./src/form/form.scss");
 
+
+const form = document.querySelector("form");
+const errorList = document.querySelector("#errors");
+let errors = [];
+form.addEventListener('submit', async event => {
+  event.preventDefault();
+  const formData = new FormData(form);
+  const entries = formData.entries();
+  const article = Object.fromEntries(entries);
+  if (formIsValid(article)) {
+    try {
+      const json = JSON.stringify(article);
+      const response = await fetch('https://restapi.fr/api/dwwm_tl', {
+        method: 'POST',
+        body: json,
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+      const body = await response.json();
+      form.reset();
+      console.log(body);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+});
+const formIsValid = article => {
+  if (!article.author || !article.category || !article.content) {
+    errors.push("Vous devez renseigner tous les champs!");
+  } else {
+    errors = [];
+  }
+  if (errors.length) {
+    let errorHTML = '';
+    errors.forEach(error => {
+      errorHTML += `<li>${error}</li>`;
+    });
+    errorList.innerHTML = errorHTML;
+    return false;
+  } else {
+    errorList.innerHTML = '';
+    return true;
+  }
+};
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=topbar.bundle.js.map
+//# sourceMappingURL=form.bundle.js.map
